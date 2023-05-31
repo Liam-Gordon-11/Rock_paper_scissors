@@ -9,7 +9,7 @@ let user = 0;
 
 for (let i = 0; i < 5; i++){
 
-user_input = prompt("Play").toUpperCase();
+input_user = prompt("Play").toUpperCase();
 rand_int = Math.floor(Math.random()*3);
 
     if (input_user =="ROCK"){ user = 0;}
