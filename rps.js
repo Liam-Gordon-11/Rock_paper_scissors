@@ -10,8 +10,7 @@ let user = 0;
 for (let i = 0; i < 5; i++){
 
 user_input = prompt("Play").toUpperCase();
-rand_int = math.floor(math.random()*3);
-
+rand_int = Math.floor(Math.random()*3);
 switch(user_input){
     case "ROCK": user = 0;break;
     case "SCISSORS": user = 1;break;
