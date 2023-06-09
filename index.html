@@ -2,13 +2,28 @@
 <html lang="en">
 <head>
     <script src = "rps.js"></script>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=
     , initial-scale=1.0">
     <title>Rock_Paper_Scissors</title>
 </head>
-<body>
-    
+<body class="game">
+    <div> <h2>Rock Paper Scissors</h2>
+    <h2 id="score"></h2></div>
+        <div class="players">
+            <div id="compSqr"class="versus"><H4>computer</H4><img id="computerImg" src="images/robot.png" alt=""></div> 
+            <h3>VS</h3>
+            <div id="playerSqr" class="versus"><h4>player</h4><img id="playerImg"src="images/player.jpg" alt=""></div>
+        </div>
+
+
+<div class="buttons">
+    <button id="rock" onclick="changeImg(0,`playerImg`)">Rock</button>
+    <button id="paper" onclick="changeImg(2,`playerImg`)">Paper</button>
+    <button id="scissors" onclick="changeImg(1,`playerImg`)">Scissors</button>
+</div>
+
 </body>
 </html>
